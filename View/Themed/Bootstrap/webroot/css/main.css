@@ -1,0 +1,117 @@
+/* Sticky footer styles
+-------------------------------------------------- */
+
+html,
+body {
+  height: 100%;
+  /* The html and body elements cannot have any padding or margin. */
+}
+
+/* Wrapper for page content to push down footer */
+#wrap {
+  min-height: 100%;
+  height: auto !important;
+  height: 100%;
+  /* Negative indent footer by its height */
+  margin: 0 auto -50px;
+  /* Pad bottom by footer height */
+  padding: 0 0 50px;
+}
+
+/* Set the fixed height of the footer here */
+#footer {
+  height: 50px;
+  background-color: #222;
+}
+
+/* Lastly, apply responsive CSS fixes as necessary */
+@media (max-width: 767px) {
+  #footer {
+    margin-left: -20px;
+    margin-right: -20px;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
+
+
+
+/* Custom page CSS
+-------------------------------------------------- */
+/* Not required for template or sticky footer method. */
+
+#wrap > .container {
+  padding: 50px 15px 0;
+}
+.container .credit {
+  margin: 12px 0;
+}
+
+code {
+  font-size: 80%;
+}
+
+
+.alert{
+	margin-top: 10px;
+}
+.navbar-form{
+	margin-top:10px;
+}
+.navbar-form .form-control{
+	width: 120px;
+	height: 30px;
+}
+.navbar-form .btn-group{
+	display:inline-block;
+}
+
+.navlink-icon {
+	position: relative;
+	padding-left: 40px !important;
+}
+.musicsprite {
+	position:absolute;
+	top: 2px;
+	left: 0;
+	width: 27px;
+	height: 48px;
+	background-image: url("../img/musicsprite.png");
+	background-size: auto 50px;
+	
+	-webkit-animation: play 2s steps(16) infinite;
+	   -moz-animation: play 2s steps(16) infinite;
+	    -ms-animation: play 2s steps(16) infinite;
+	     -o-animation: play 2s steps(16) infinite;
+	        animation: play 2s steps(16) infinite;
+}
+
+@-webkit-keyframes play {
+   from { background-position:    0px; }
+     to { background-position: -800px; }
+}
+
+@-moz-keyframes play {
+   from { background-position:    0px; }
+     to { background-position: -800px; }
+}
+
+@-ms-keyframes play {
+   from { background-position:    0px; }
+     to { background-position: -800px; }
+}
+
+@-o-keyframes play {
+   from { background-position:    0px; }
+     to { background-position: -800px; }
+}
+
+@keyframes play {
+   from { background-position:    0px; }
+     to { background-position: -800px; }
+}
+
+.glyphicon-sort-by-alphabet, .glyphicon-sort-by-attributes {
+	font-size: 16px;
+	opacity: 0.5;
+}
