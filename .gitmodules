@@ -1,3 +1,15 @@
 [submodule "Plugin/Migrations"]
 	path = Plugin/Migrations
 	url = https://github.com/CakeDC/migrations.git
+[submodule "Plugin/Ratings"]
+	path = Plugin/Ratings
+	url = https://github.com/CakeDC/ratings.git
+[submodule "Plugin/Search"]
+	path = Plugin/Search
+	url = https://github.com/CakeDC/search.git
+[submodule "Plugin/Users"]
+	path = Plugin/Users
+	url = https://github.com/CakeDC/users.git
+[submodule "Plugin/utils"]
+	path = Plugin/utils
+	url = https://github.com/CakeDC/utils.git
