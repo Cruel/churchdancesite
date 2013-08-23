@@ -8,7 +8,7 @@
           <span class="icon-bar"></span>
         </button>
         <a class="navbar-brand navlink-icon" href="<?php echo Router::url('/', true); ?>">Stake Dance <span class="musicsprite"></span></a>
-        <div class="nav-collapse collapse">
+        <div class="navbar-collapse collapse">
           <ul class="nav navbar-nav">
             <li><a href="<?php echo Router::url('/', true); ?>">Home</a></li>
             <li><?php echo $this->Html->link(__('Song List'), array('plugin' => null, 'controller' => 'songs', 'action' => 'index', 'admin'=>false)); ?></li>

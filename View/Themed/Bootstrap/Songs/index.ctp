@@ -13,13 +13,12 @@
 		<td><?php echo h($song['Song']['artist']); ?>&nbsp;</td>
 		<td>
 		<?php 
-
-			$rated = 0;
+			$rating = 0;
 			if (isset($rated, $rated[$song['Song']['id']]))
-				$rated = (int) $rated[$song['Song']['id']];		
+				$rating = (int) $rated[$song['Song']['id']];		
 			
 			echo $this->element("thumbsrating", array(
-				'rated' => $rated,
+				'rated' => $rating,
 				'url' => array_merge($this->passedArgs, array('rate' => $song['Song']['id'], 'redirect' => true)),
 				'rating_1' => $song['Song']['rating_1'],
 				'rating_neg1' => $song['Song']['rating_neg1'],
